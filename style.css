@@ -1,0 +1,33 @@
+:root{
+  --bg:#05070B;--panel:#0B111A;--panel2:#101824;--text:#F6F8FB;--muted:#9AA8BA;--blue:#4DA3FF;--line:#233044;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif}
+nav{position:fixed;top:0;left:0;right:0;height:72px;background:rgba(5,7,11,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 6vw;gap:28px;z-index:10}
+.brand{font-weight:900;letter-spacing:.12em;margin-right:auto}.brand span{color:var(--blue)}
+nav a{color:var(--muted);text-decoration:none;font-size:14px}
+main{padding-top:72px}
+section{min-height:100vh;padding:90px 8vw;display:flex;flex-direction:column;justify-content:center}
+.hero{background:radial-gradient(circle at 80% 20%,rgba(77,163,255,.24),transparent 36%),linear-gradient(180deg,#05070B,#080D14)}
+.kicker,.label{color:var(--blue);text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:800}
+h1{font-size:76px;line-height:.92;margin:18px 0;max-width:1050px}
+h2{font-size:46px;line-height:1.05;margin:12px 0 24px;max-width:980px}
+.lead,p{font-size:20px;line-height:1.6;color:var(--muted);max-width:900px}
+.cta{display:inline-block;margin-top:28px;background:var(--blue);color:#03101f;text-decoration:none;font-weight:800;padding:16px 22px;border-radius:999px;width:max-content}
+.section{border-top:1px solid var(--line);background:linear-gradient(180deg,var(--bg),var(--panel))}
+.metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.metrics div,.cards article{background:var(--panel2);border:1px solid var(--line);border-radius:28px;padding:30px}
+.metrics strong{font-size:48px;color:var(--blue);display:block}
+.metrics span{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:24px}
+article b{font-size:24px} article em{color:var(--blue);font-style:normal;font-weight:800}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:34px}
+.flow span{border:1px solid var(--line);background:#070D14;border-radius:999px;padding:20px;text-align:center;font-weight:800}
+.contact{min-height:70vh}
+@media(max-width:900px){
+  nav a{display:none}
+  h1{font-size:44px}h2{font-size:32px}
+  .metrics,.cards,.flow{grid-template-columns:1fr}
+  section{padding:70px 26px}
+}
