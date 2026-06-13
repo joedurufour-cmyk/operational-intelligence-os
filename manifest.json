@@ -1,0 +1,17 @@
+{
+  "name": "Operational Intelligence OS",
+  "short_name": "OI OS",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#05070B",
+  "theme_color": "#070A0F",
+  "description": "Executive positioning mini app for Guillermo Durufour.",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
